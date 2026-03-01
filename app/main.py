@@ -8,6 +8,7 @@ app = FastAPI(title="Event Registration & Capacity Manager")
 
 app.include_router(auth.router)
 app.include_router(events.router)
+app.include_router(registrations.router)
 
 @app.get("/")
 def root():
