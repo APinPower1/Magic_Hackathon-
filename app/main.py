@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from app.database import engine, Base
-from app.routers import auth, events
+from app.routers import auth, events, registrations
 
 Base.metadata.create_all(bind=engine)
 
